@@ -1,0 +1,27 @@
+public class Book {
+    private final Author author;
+    private final String bookName;
+    private int publishingYear;
+
+    public Book(Author author, String bookName, int publishingYear) {
+        this.author = author;
+        this.bookName = bookName;
+        this.publishingYear = publishingYear;
+    }
+
+    public String getBookName() {
+        return this.bookName;
+    }
+
+    public int getPublishingYear() {
+        return this.publishingYear;
+    }
+
+    public String getAuthor() {
+        return author.getAuthorFirstName() + author.getAuthorSecondName();
+    }
+
+    public void setPublishingYear(int publishingYear) {
+        this.publishingYear = publishingYear;
+    }
+}
